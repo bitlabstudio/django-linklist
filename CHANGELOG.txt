@@ -1,5 +1,7 @@
 === ongoing ===
 
+=== 0.3 ===
+
 - Made image field optional
 - Removed cms-plugin model
 - Added slug for category model 
