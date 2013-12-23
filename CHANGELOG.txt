@@ -1,5 +1,7 @@
 === ongoing ===
 
+=== 0.4 ===
+
 - get_linklist now can take a comma separated list of partners
 
 === 0.3 ===
