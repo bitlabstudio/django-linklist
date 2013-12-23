@@ -1,0 +1,4 @@
+{% load i18n thumbnail %}
+{% for link in object_list %}
+    <a href="{{ link.url }}"><img src="{% thumbnail link.image 100x100 crop %}" alt="{{ link.title }}" /></a>
+{% endfor %}

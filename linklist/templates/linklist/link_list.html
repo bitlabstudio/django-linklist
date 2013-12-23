@@ -1,0 +1,29 @@
+{% load i18n thumbnail %}
+<table id="linksLeft">
+    {% for link in object_list_left %}
+        <tr>
+            <td>
+                <img src="{% thumbnail link.image 100x100 crop %}" alt="{{ link.title }}" />
+            </td>
+            <td>
+                <p class="linkTitle">{{ link.title }}</p>
+                <a class="url" href="{{ link.url }}" target="_blank">{{ link.url }}</a>
+                <p>{{ link.description }}</p>
+            </td>
+        </tr>
+    {% endfor %}
+</table>
+<table id="linksRight">
+    {% for link in object_list_right %}
+        <tr>
+            <td>
+                <img src="{% thumbnail link.image 100x100 crop %}" alt="{{ link.title }}" />
+            </td>
+            <td>
+                <p class="linkTitle">{{ link.title }}</p>
+                <a class="url" href="{{ link.url }}">{{ link.url }}</a>
+                <p>{{ link.description }}</p>
+            </td>
+        </tr>
+    {% endfor %}
+</table>
