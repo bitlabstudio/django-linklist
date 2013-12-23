@@ -4,6 +4,7 @@
 - Removed cms-plugin model
 - Added slug for category model 
 - Extended field lengths
+- Added get_linklist templatetag
 
 === 0.2 ===
 

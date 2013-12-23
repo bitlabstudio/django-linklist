@@ -66,6 +66,12 @@ Returns a number of links::
         // YOur HTML markup
     {% endfor %}
 
+If you are using the ``LinkCategory`` model, you can get the links for a
+cateogry like so::
+
+    {% get_linklist 8 category='slug' as linklist %}
+
+
 Roadmap
 -------
 
