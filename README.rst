@@ -69,7 +69,11 @@ Returns a number of links::
 If you are using the ``LinkCategory`` model, you can get the links for a
 cateogry like so::
 
-    {% get_linklist 8 category='slug' as linklist %}
+    {% get_linklist 8 categories='slug' as linklist %}
+
+If you want to show links for several categories in one list::
+
+    {% get_linklist 8 categories='foo,bar' as linklist %}
 
 
 Roadmap

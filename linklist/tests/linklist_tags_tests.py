@@ -28,6 +28,19 @@ class GetLinklistTestCase(TestCase):
         link1.save()
         link2 = factories.LinkFactory(category=cat2)
         link2.save()
-        result = linklist_tags.get_linklist(4, category='foo')
+        result = linklist_tags.get_linklist(4, categories='foo')
         self.assertEqual(result[0].category, cat1, msg=(
             'Should return only links with the desired category'))
+
+    def test_tag_with_multiple_categories(self):
+        cat1 = factories.LinkCategoryFactory(slug='foo')
+        cat1.save()
+        cat2 = factories.LinkCategoryFactory(slug='bar')
+        cat2.save()
+        link1 = factories.LinkFactory(category=cat1)
+        link1.save()
+        link2 = factories.LinkFactory(category=cat2)
+        link2.save()
+        result = linklist_tags.get_linklist(4, categories='foo,bar')
+        self.assertEqual(result.count(), 2, msg=(
+            'Should return links for all desired categories'))
