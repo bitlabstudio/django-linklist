@@ -3,6 +3,11 @@ CMSplugin Linklist
 
 Django app to render a list of links with meta information and screenshots.
 
+Please note that this repo contains the same code as cmsplugin-linklist.
+We will remove the Link-model related code from that repo soon so that the
+cmsplugin repo only contains the cmsplugin relevant code.
+
+
 Prerequisites
 -------------
 
