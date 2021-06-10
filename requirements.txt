@@ -3,7 +3,7 @@
 # ===========================================================================
 # Packages essential to this app. Needed by anyone who wants to use this app.
 # ===========================================================================
-Django==1.4.5
+Django==2.2.24
 Pillow==2.0.0
 django-filer==0.9.3
 South
